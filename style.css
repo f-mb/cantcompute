@@ -2,14 +2,13 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 * {
-	font-family: 'VT323', Courier, serif;
+
 }
 
-html, body { height: 100%; margin: 0px; padding: 0px; font-size: 14px; font-weight: 300 ;color: #FFF;
-background-color: #000; }
+html, body { height: 100%; margin: 0px; padding: 0px; font-size: 14px; font-weight: 300 ; font-family: 'Roboto', Arial, sans-serif; }
 
 section {
-	height: 100% !important;
+	heightd: 100% !important;
 	width: 100%;
 	margin: 0; padding: 0;
 	position: relative;
@@ -21,6 +20,7 @@ section {
 }
 
 #home {
+	height: 100% !important;
 	color: #FFF;
 	background-color: #222;
 	background: url('bg.jpg') center center;
@@ -28,6 +28,11 @@ section {
 }
 
 .container {
+	margin: 50px auto;
+	width: 80%;
+	display: block;
+}
+.container-center {
 	margin: 0 auto;
 	width: 80%;
 	display: block;
@@ -39,13 +44,48 @@ section {
   	text-align:center;
 }
 
-#home h1 {
-	font-weight: 700;
+h1 {
+	font-weight: 800;
 	padding: 0; margin: 0;
-	color: #FFF;
 	text-transform: uppercase;
-	font-size: 10em;
+	font-size: 6em;
 	text-align: center;
+	font-family: 'VT323', Courier, serif;
+}
+
+
+h2 {
+	font-weight: 600;
+	padding: 0; margin: 0 0 20px 0;
+	text-transform: uppercase;
+	font-size: 3em;
+	text-align: center;
+	font-family: 'VT323', Courier, serif;
+}
+
+h3 {
+	font-weight: 600;
+	padding: 0; margin: 20px 0;
+	text-transform: uppercase;
+	font-size: 2em;
+	font-family: 'VT323', Courier, serif;
+		color: #444;
+}
+
+.multicolortext {
+			 background-image: linear-gradient(to right, red, OrangeRed, orange, MediumVioletRed, violet, indigo, SteelBlue,  SeaGreen, Gold);
+			 -webkit-background-clip: text;
+			 -moz-background-clip: text;
+			 background-clip: text;
+			 color: transparent;
+		 }
+
+#home h1 {
+	font-size: 10em;
+}
+#home h2 {
+	font-size: 1.2em;
+	margin: 0;
 }
 
 #home h1 a {
@@ -82,14 +122,6 @@ section {
 	-o-transition: all 0.5s;
 }
 
-#home h2 {
-	font-weight: 600;
-	padding: 0; margin: 0;
-	color: #FFF;
-	text-transform: uppercase;
-	font-size: 1em;
-	text-align: center;
-}
 
 .btn {
 	color: inherit;
@@ -108,12 +140,11 @@ section {
 
 .lang { font-size: 150px; }
 
-#home .btn {
-	text-transform: uppercase;
-	margin-top: 25px;
-	font-size: 90%;
+.btn {
+	font-size: 125%;
 	display: inline-block;
 	font-weight: 600;
+	font-family: 'VT323', Courier, serif;
 }
 
 #home .btn:hover {
@@ -125,32 +156,22 @@ section {
 	color: #333;
 }
 
-#about h1 {
-	font-weight: 800;
-	padding: 0; margin: 0;
-	color: inherit;
-	text-transform: uppercase;
-	font-size: 80px;
-}
-#about h2 {
-	font-weight: 600;
-	padding: 0; margin-top: 0; margin-bottom: 50px;
-	color: inherit;
-	text-transform: uppercase;
-	font-size: 15px;
-}
 
-#about .btn:hover {
+.btn:hover {
 	background-color: #333;
 	color: #FFF;
 }
 
+
+
 a {
-	color: #fff;
+	color: #444;
 }
 
 footer {
 
 	font-size: 1em;
+	color_: #FFF;
+	background-color_: #000;
 
 }
